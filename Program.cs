@@ -1,10 +1,10 @@
 ﻿using Cubic2D.Scenes;
 using Cubic2D.Windowing;
-using Cubic2DTemplate;
+using Cubic2DSample;
 
 GameSettings settings = new GameSettings()
 {
-    Title = "Cubic2D Template",
+    Title = "Cubic2D Sample",
     Resizable = true
 };
 
