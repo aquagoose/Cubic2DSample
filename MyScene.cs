@@ -19,7 +19,7 @@ public class MyScene : Scene
         base.Initialize();
         
         // In this case, the ClearColor represents the background colour of the game window.
-        World.ClearColor = Color.CornflowerBlue;
+        World.ClearColor = Color.MediumPurple;
 
         _font = new Font(Game, "Content/arial.ttf");
 
@@ -29,10 +29,11 @@ public class MyScene : Scene
         // scripts to the entity.
         Entity entity = new Entity(new Transform()
         {
-            Position = new Vector2(100),
+            Position = Game.Window.Size.ToVector2() / 2f,
             Origin = texture.Size.ToVector2() / 2f
         });
         entity.AddComponent(typeof(Sprite), texture);
+        entity.AddComponent(typeof(MyScript));
         AddEntity("MyEntity", entity);
     }
 
@@ -53,9 +54,9 @@ public class MyScene : Scene
         
         Graphics.SpriteRenderer.Begin();
 
-        _font.Draw(Graphics.SpriteRenderer, 24,
-            "Welcome to [c=red]C[c=orange]u[c=yellow]b[c=green]i[c=blue]c[c=darkblue]2[c=purple]D!", new Vector2(10),
-            Color.White, 0, Vector2.Zero, Vector2.One);
+        _font.Draw(Graphics.SpriteRenderer, 32,
+            "Welcome to [c=red]C[c=orange]u[c=yellow]b[c=green]i[c=blue]c[c=darkblue]2[c=purple]D[c=red]!",
+            new Vector2(10), Color.White, 0, Vector2.Zero, Vector2.One);
         
         Graphics.SpriteRenderer.End();
     }

@@ -11,7 +11,7 @@ public class MyScript : Component
     {
         base.Initialize();
 
-        Transform.Scale = new Vector2(2f);
+        Transform.Scale = new Vector2(0.5f);
     }
 
     // Update is called once per frame.
@@ -26,13 +26,13 @@ public class MyScript : Component
         // You can use Input.KeyDown() too, but here we use Input.KeysDown() as it supports checking multiple different
         // keys without using multiple if statements.
         if (Input.KeysDown(Keys.W, Keys.Up))
-            Transform.Position.Y += 10 * Time.DeltaTime;
+            Transform.Position.Y -= 100 * Time.DeltaTime;
         if (Input.KeysDown(Keys.S, Keys.Down))
-            Transform.Position.Y -= 10 * Time.DeltaTime;
-        if (Input.KeysDown(Keys.D, Keys.Left))
-            Transform.Position.X += 10 * Time.DeltaTime;
-        if (Input.KeysDown(Keys.A, Keys.Right))
-            Transform.Position.X -= 10 * Time.DeltaTime;
+            Transform.Position.Y += 100 * Time.DeltaTime;
+        if (Input.KeysDown(Keys.D, Keys.Right))
+            Transform.Position.X += 100 * Time.DeltaTime;
+        if (Input.KeysDown(Keys.A, Keys.Left))
+            Transform.Position.X -= 100 * Time.DeltaTime;
 
         if (Input.MouseButtonDown(MouseButtons.Left))
             Transform.Position = Input.MousePosition;
