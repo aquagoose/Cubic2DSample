@@ -6,9 +6,9 @@
         <ImplicitUsings>disable</ImplicitUsings>
         <Nullable>disable</Nullable>
     </PropertyGroup>
-
+    
     <ItemGroup>
-      <PackageReference Include="Cubic2D" Version="1.0.0-alpha" />
+        <ProjectReference Include="../Cubic2D/Cubic2D/Cubic2D.csproj" />
     </ItemGroup>
 
     <ItemGroup>
@@ -16,9 +16,6 @@
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
       <None Update="Content\awesomeface.png">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-      <None Update="openal32.dll">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
     </ItemGroup>

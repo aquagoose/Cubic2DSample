@@ -1,6 +1,7 @@
 using System.Numerics;
 using Cubic2D;
 using Cubic2D.Entities.Components;
+using Cubic2D.Utilities;
 
 namespace Cubic2DSample;
 
@@ -23,7 +24,7 @@ public class MyScript : Component
         // This means that the object will always move & rotate at the same speed, regardless of the framerate.
         Transform.Rotation += 1f * Time.DeltaTime;
 
-        // You can use Input.KeyDown() too, but here we use Input.KeysDown() as it supports checking multiple different
+        // You can use Input.KeyPressed() too, but here we use Input.KeysDown() as it supports checking multiple different
         // keys without using multiple if statements.
         if (Input.KeysDown(Keys.W, Keys.Up))
             Transform.Position.Y -= 100 * Time.DeltaTime;
@@ -33,6 +34,9 @@ public class MyScript : Component
             Transform.Position.X += 100 * Time.DeltaTime;
         if (Input.KeysDown(Keys.A, Keys.Left))
             Transform.Position.X -= 100 * Time.DeltaTime;
+        
+        if (Input.KeyPressed(Keys.C))
+            Transform.Position = Game.Window.Size.ToVector2() / 2f;
 
         if (Input.MouseButtonDown(MouseButtons.Left))
             Transform.Position = Input.MousePosition;

@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cubic2DSample", "Cubic2DSample.csproj", "{F020DE63-847E-42F7-9176-59FA670AAA36}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cubic2DSample", "Cubic2DSample\Cubic2DSample.csproj", "{F020DE63-847E-42F7-9176-59FA670AAA36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cubic2D", "Cubic2D\Cubic2D\Cubic2D.csproj", "{EFEF45E2-41FD-4206-A2E1-10F0DDAB44E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +14,9 @@ Global
 		{F020DE63-847E-42F7-9176-59FA670AAA36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F020DE63-847E-42F7-9176-59FA670AAA36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F020DE63-847E-42F7-9176-59FA670AAA36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFEF45E2-41FD-4206-A2E1-10F0DDAB44E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFEF45E2-41FD-4206-A2E1-10F0DDAB44E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFEF45E2-41FD-4206-A2E1-10F0DDAB44E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFEF45E2-41FD-4206-A2E1-10F0DDAB44E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
